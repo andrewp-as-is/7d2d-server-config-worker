@@ -1,0 +1,2 @@
+1) translation
+food.get_name GAME_LANGUAGE_CODE

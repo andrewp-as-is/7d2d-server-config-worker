@@ -1,0 +1,8 @@
+Django
+dj-database-url
+django-configurations-autoenv
+django-configurations-base
+django-configurations-celery-app
+django-configurations-installed-apps
+
+xmltodict

@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  django:
+    image: python42.com-backend-commands-worker:latest
+    container_name: python42.com-backend-commands-worker
+    env_file:
+      - .env
+    volumes:
+      - '~/.ssh/id_rsa:/root/.ssh/id_rsa'
+      - '~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub'
+      - '~/.ssh/known_hosts:/root/.ssh/known_hosts'

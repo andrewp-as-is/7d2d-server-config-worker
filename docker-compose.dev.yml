@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  django:
+    build: .
+    volumes:
+      - '.:/code'
+      - '/tmp:/tmp'
+      - '~/.ssh/id_rsa:/root/.ssh/id_rsa'
+      - '~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub'
+      - '~/.ssh/known_hosts:/root/.ssh/known_hosts'
+

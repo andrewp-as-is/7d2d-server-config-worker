@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  django:
+    build: .
+    restart: always
+    volumes:
+      - '/mnt/python42.com/files:/mnt/python42.com/files'
+      - '/home/ubuntu/.ssh/id_rsa:/root/.ssh/id_rsa'
+      - '/home/ubuntu/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub'
+      - '/home/ubuntu/.ssh/known_hosts:/root/.ssh/known_hosts'
+
+
